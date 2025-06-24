@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../../assets/icon.svg";
+import headerImg from "../../assets/img.png";
 import "./Banner.css";
 
 const Banner = () => {

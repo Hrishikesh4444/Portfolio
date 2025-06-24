@@ -34,6 +34,9 @@ const Skills = () => {
     { name: "HTML", icon: <SiHtml5 /> },
     { name: "CSS", icon: <SiCss3 /> },
     { name: "JavaScript", icon: <SiJavascript /> },
+    { name: "Redux", icon: <SiRedux /> },
+    { name: "Bootsrap", icon: <SiBootstrap /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss/> },
   ];
   const backendSkills = [
     { name: "Node.js", icon: <SiNodedotjs /> },
@@ -44,9 +47,7 @@ const Skills = () => {
     { name: "Git", icon: <DiGit /> },
     { name: "GitHub", icon: <DiGithubBadge /> },
     { name: "Mysql", icon: <SiMysql /> },
-    { name: "Redux", icon: <SiRedux /> },
-    { name: "Bootsrap", icon: <SiBootstrap /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss/> },
+    
 
 
   ];
