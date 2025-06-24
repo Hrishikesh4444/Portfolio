@@ -1,0 +1,134 @@
+.skills {
+  background-color: #08080a;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.skills-section {
+  padding: 100px 0 200px 0;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, rgb(12,9,25) 0%, rgb(21,10,39) 40%, rgb(25, 11, 53) 100%);
+}
+.skills-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.skills-subtitle {
+  color: #b0b0b0;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  
+}
+.skills-box {
+  background-color: #101725;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 25px rgba(0, 225, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
+}
+
+.skills-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(0, 225, 255, 0.15);
+}
+
+.frontend-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.skill-card {
+  background-color: #1e293b;
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  margin: 0.6rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+
+}
+
+.skill-card:hover {
+  background-color: #334155;
+}
+
+.skill-card svg {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 992px) {
+  .skills-title {
+    font-size: 2.5rem;
+  }
+
+  .frontend-title {
+    font-size: 1.5rem;
+  }
+
+  .skill-card {
+    font-size: 0.95rem;
+  }
+
+  .skills-box {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 80px 0 100px 0;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .skills-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .skills-subtitle {
+    font-size: 1rem;
+  }
+
+  .frontend-title {
+    font-size: 1.3rem;
+  }
+
+  .skill-card {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .skills-section {
+    padding: 60px 0 80px 0;
+  }
+}
