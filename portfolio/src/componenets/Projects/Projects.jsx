@@ -8,6 +8,7 @@ import spotify from "../../assets/spotify.png"
 import dinosaur from "../../assets/dinosaur.png";
 import spaceInvaders from "../../assets/space-invaders.png";
 import weather from "../../assets/weather.png"
+import Hotel_booking from "../../assets/Hotel_booking.png"
 
 const projects = [
   {
@@ -38,6 +39,15 @@ const projects = [
     link: "https://github.com/Hrishikesh4444/Zerodha-clone"
   },
   {
+    title: "Hotel Booking Website",
+    date: "July 2025",
+    description:
+      "Created a hotel booking website where users can explore hotels with details like location, type, and price, and leave reviews. Hotel owners can also edit their listings and manage hotel information easily",
+    tags: ["NodeJS", "ExpressJs","ejs", "MongoDB", "Bootstrap"],
+    image: `${Hotel_booking}`,
+    link: "https://github.com/Hrishikesh4444/Havenly"
+  },
+  {
     title: "Doctor Appointment Booking System",
     date: "Apr 2025",
     description:
@@ -63,15 +73,6 @@ const projects = [
     tags: ["HTML","CSS","Javascript"],
     image: `${dinosaur}`,
     link:"https://github.com/Hrishikesh4444/Dinosaur-Game"
-  },
-  {
-    title: "Space Invaders Game",
-    date: "May 2025",
-    description:
-      "ecreated the classic Space Invaders arcade game with real-time shooting mechanics, enemy movement, and collision detection.",
-    tags: ["HTML","CSS","Javascript"],
-    image: `${spaceInvaders}`,
-    link:"https://github.com/Hrishikesh4444/Space-Invaders-Game"
   },
   {
     title: "Weather Website",
