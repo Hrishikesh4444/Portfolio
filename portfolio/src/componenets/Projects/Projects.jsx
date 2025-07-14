@@ -9,8 +9,18 @@ import dinosaur from "../../assets/dinosaur.png";
 import spaceInvaders from "../../assets/space-invaders.png";
 import weather from "../../assets/weather.png"
 import Hotel_booking from "../../assets/Hotel_booking.png"
+import connectaImg from "../../assets/connecta.png"
 
 const projects = [
+  {
+    title: "Connecta - Social Networking Platform",
+    date: "July 2025",
+    description:
+      "Connecta is a full-stack social networking platform, where users can build detailed profiles, connect with others, share posts, and engage through likes and comments. It features real-time connection requests, profile editing, and a modern responsive design.",
+    tags: ["Node.js", "Express.js", "React.js", "Next.js", "MongoDb"],
+    image: `${connectaImg}`,
+    link: "https://github.com/Hrishikesh4444/Connecta"
+  },
   {
     title: "Food Delivery Website",
     date: "Mar 2025",
