@@ -9,7 +9,7 @@ import {
   SiExpress,
   SiMongodb,
   SiNextdotjs,
-  SiTypescript 
+  SiTypescript,
 } from "react-icons/si";
 import {
   SiRedux,
@@ -23,13 +23,14 @@ import {
 import { TbBrandTypescript } from "react-icons/tb";
 
 import { DiGit, DiGithubBadge } from "react-icons/di";
+import { delay, motion, scale } from "framer-motion";
 
 const Skills = () => {
   const allSkills = [
     { name: "", icon: <SiC /> },
     { name: "C++", icon: <SiCplusplus /> },
     { name: "JavaScript", icon: <SiJavascript /> },
-    { name: "Typescript", icon:<SiTypescript  /> },
+    { name: "Typescript", icon: <SiTypescript /> },
     { name: "HTML", icon: <SiHtml5 /> },
     { name: "CSS", icon: <SiCss3 /> },
     { name: "React Js", icon: <FaReact /> },
@@ -45,18 +46,70 @@ const Skills = () => {
     { name: "Mysql", icon: <SiMysql /> },
   ];
 
+  const fadeInUp = () => ({
+    hidden: {
+      opacity: 0,
+      y: 40,
+      scale: 0.95
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.4,
+        ease: "linear",
+      },
+    },
+  });
+  const fadeUp = (delay) => ({
+    hidden: {
+      opacity: 0,
+      y: 40,
+      
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      
+      transition: {
+        duration: 0.4,
+        delay: delay
+      },
+    },
+  });
+
   return (
     <div className="skills" id="skills">
       <div className="skills-section">
-        <h2 className="skills-title">Skills</h2>
-        <p className="skills-subtitle">
+        <motion.h2
+          variants={fadeUp(0.4)}
+          initial="hidden"
+          whileInView="show"
+          className="skills-title"
+        >
+          Skills
+        </motion.h2>
+        <motion.p
+          variants={fadeUp(0.2)}
+          initial="hidden"
+          whileInView="show"
+          className="skills-subtitle"
+          
+        >
           Here are some of my skills on which I have been working on.
-        </p>
+        </motion.p>
         <div className="skills-container">
           {allSkills.map((skill, index) => (
-            <div className="skills-box" key={index}>
-                {skill.icon} {skill.name}
-            </div>
+            <motion.div
+              variants={fadeInUp()}
+              initial="hidden"
+              whileInView="show"
+              className="skills-box"
+              key={index}
+            >
+              {skill.icon} {skill.name}
+            </motion.div>
           ))}
         </div>
       </div>

@@ -2,6 +2,8 @@ import React from "react";
 import "./Education.css";
 import nitLogo from "../../assets/nitSilchar.png";
 import spsLogo from "../../assets/sps.jpeg";
+import { motion } from "framer-motion";
+
 
 const Education = () => {
   const educationData = [
@@ -34,36 +36,82 @@ const Education = () => {
       logo: `${spsLogo}`,
     },
   ];
+
+  const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.3,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const logoVariants = {
+  hidden: { opacity: 0, scale: 0.8, rotate: -10 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    rotate: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
   return (
-    <div id="education" className="education">
-      <div className="timeline-container">
-        <h2 className="timeline-title">Education</h2>
-        {/* <p className="timeline-subtitle">
-        My education has been a journey of self-discovery and growth.
-      </p> */}
-        <div className="timeline">
-          {educationData.map((item, index) => (
-            <div
-              key={index}
-              className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
-            >
-              <div className="timeline-icon">
-                <img src={item.logo} alt="logo" />
-              </div>
-              <div className="timeline-content">
-                <h3>{item.title}</h3>
-                <p className="degree">{item.degree}</p>
-                <p className="duration">{item.duration}</p>
-                <p className="grade">
-                  <strong>Grade:</strong> {item.grade}
-                </p>
-                <p>{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+    <motion.div
+  id="education"
+  className="education"
+  variants={containerVariants}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.2 }}
+>
+  <div className="timeline-container">
+    <motion.h2 className="timeline-title" variants={itemVariants} initial="hidden" whileInView="show">
+      Education
+    </motion.h2>
+
+    <div className="timeline">
+      {educationData.map((item, index) => (
+        <motion.div
+          key={index}
+          className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
+          variants={itemVariants}
+          initial="hidden" whileInView="show"
+        >
+          <motion.div className="timeline-icon" variants={logoVariants} initial="hidden" whileInView="show">
+            <img src={item.logo} alt="logo" />
+          </motion.div>
+          <div className="timeline-content">
+            <h3>{item.title}</h3>
+            <p className="degree">{item.degree}</p>
+            <p className="duration">{item.duration}</p>
+            <p className="grade">
+              <strong>Grade:</strong> {item.grade}
+            </p>
+            <p>{item.description}</p>
+          </div>
+        </motion.div>
+      ))}
     </div>
+  </div>
+</motion.div>
+
   );
 };
 

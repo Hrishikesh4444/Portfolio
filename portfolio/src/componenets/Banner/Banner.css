@@ -1,9 +1,5 @@
 .banner {
   margin-top: 0;
-<<<<<<< HEAD
-=======
-
->>>>>>> 17bf9a4ba1efe67db1b77c11f85fb4ade4151bbc
   padding-top: 80px !important;
   padding-bottom: 0px !important;
   height: auto;
@@ -59,11 +55,28 @@
 }
 
 .banner img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 350px;
   height: auto;
-
-  animation: updown 3s linear infinite;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  /* box-shadow: 0 8px 24px rgba(201, 195, 195, 0.08); */
+  animation: fadeInUp 1s ease-out forwards, updown 3s ease-in-out infinite;
+  opacity: 0;
 }
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 
 
 .wrap {

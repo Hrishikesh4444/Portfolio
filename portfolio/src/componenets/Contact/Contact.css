@@ -1,7 +1,9 @@
 .contact {
   background: linear-gradient(to bottom, rgb(12, 12, 41), rgb(29,14,59), #0b1e44, #0f2950, #202457);
-
-  padding: 60px 0 200px 0;
+  
+}
+.container-div {
+  padding: 60px 20px 200px 20px;
 }
 .contact img {
   width: 72%;
