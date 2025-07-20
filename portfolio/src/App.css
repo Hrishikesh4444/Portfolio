@@ -40,3 +40,15 @@ a{
   ::-webkit-scrollbar-thumb:hover {
     background: #626970;
   }
+
+  .app-container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    .app {
+      width: 100vw;
+      height: 80vh;
+    }
+  }

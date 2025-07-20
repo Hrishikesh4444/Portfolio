@@ -68,6 +68,14 @@
   opacity: 0;
 }
 
+.sticky-section-wrapper {
+  position: relative;
+  height: 200vh; /* Enough height to see the scroll effect */
+  background-color: #08080a;
+}
+
+
+
 @keyframes fadeInUp {
   0% {
     transform: translateY(20px);

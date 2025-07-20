@@ -9,7 +9,7 @@ nav.navbar {
   opacity: 0.8;
 }
 nav.navbar a.navbar-brand {
-    
+    width: 30%;
     color: #fff;
     font-weight: 700;
 }
