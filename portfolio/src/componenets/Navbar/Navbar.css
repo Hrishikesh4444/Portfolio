@@ -1,7 +1,7 @@
 nav.navbar {
   padding: 18px 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   z-index: 99;
   transition:  0.32s ease-in-out;
@@ -9,7 +9,7 @@ nav.navbar {
   opacity: 0.8;
 }
 nav.navbar a.navbar-brand {
-    width: 30%;
+    
     color: #fff;
     font-weight: 700;
 }

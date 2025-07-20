@@ -3,10 +3,15 @@
   
 }
 .container-div {
+  max-width: 100%;
   padding: 60px 20px 200px 20px;
+  overflow-x: hidden;
 }
 .contact img {
-  width: 72%;
+  width: 100%;       
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 .contact h2 {
 	font-size: 45px;

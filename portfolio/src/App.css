@@ -6,9 +6,12 @@
     scroll-behavior: smooth;
     scroll-padding:  75px;
     font-family: 'Poppins', sans-serif;
+    
+    
 }
 body {
     min-height: 100vh;
+   
     overflow-x: hidden;
     position: relative;
     color: #fff;

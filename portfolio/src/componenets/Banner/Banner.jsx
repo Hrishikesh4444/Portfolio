@@ -88,7 +88,7 @@ const Banner = () => {
   const container2 = (delay) => ({
     hidden: {
       opacity: 0,
-      x: 60,
+      x: 30,
     },
     show: {
       opacity: 1,

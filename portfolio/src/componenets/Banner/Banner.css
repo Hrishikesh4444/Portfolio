@@ -2,10 +2,12 @@
   margin-top: 0;
   padding-top: 80px !important;
   padding-bottom: 0px !important;
+  margin-bottom: -2px;
   height: auto;
   min-height: 100vh;
   display: flex;
   align-items: center;
+  
 }
 
 .banner .tagline {
