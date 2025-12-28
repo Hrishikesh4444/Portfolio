@@ -14,6 +14,16 @@ import {easeInOut, motion} from 'framer-motion'
 
 const projects = [
   {
+    title: "Askify AI Chat App",
+    date: "Dec 2025",
+    description:
+      "Built an AI-powered chat platform using React and Express that allows users to create threads, send prompts, and receive dynamic AI responses.",
+    tags: ["Node.js", "Express.js", "React.js", "Next.js", "MongoDb"],
+    image: `${askify}`,
+    link:"https://github.com/Hrishikesh4444/Askify---AI-Chat-App",
+    delay: 0.2
+  },
+  {
     title: "Connecta - Social Networking Platform",
     date: "July 2025",
     description:
